@@ -12,8 +12,8 @@ st.set_page_config(page_title="🤡 Ultimate Meme Generator", layout="wide")
 st.title("MemeBanao.Ai")
 st.header("Aalu dalo to sona niklega")  
 
-USERNAME = os.getenv("IMGFLIP_USERNAME")
-PASSWORD = os.getenv("IMGFLIP_PASSWORD")
+USERNAME = st.secrets["IMGFLIP_USERNAME"]
+PASSWORD = st.secrets["IMGFLIP_PASSWORD"]
 
 caption_templates = [
     "When you realize {topic} is just a social experiment.",
