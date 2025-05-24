@@ -4,13 +4,13 @@ import random
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env
+
 load_dotenv()
 
 st.set_page_config(page_title="🤡 Ultimate Meme Generator", layout="wide")
 
 st.title("MemeBanao.Ai")
-st.header("Aalu dalo to sona niklega")  # Hinglish meme header
+st.header("Aalu dalo to sona niklega")  
 
 USERNAME = os.getenv("IMGFLIP_USERNAME")
 PASSWORD = os.getenv("IMGFLIP_PASSWORD")
